@@ -19,11 +19,11 @@ int main()
 	int max{ 20 };
 	const int arr_1_Size{ 20 };
 
-	int arr_1[arr_1_Size]{ -5,  15, 0,  -15 ,8, -10, 0, -1, 16, 12, 0 , 20, 6, 8, 17, 4, 10, 3,19 ,16 };
+	int arr_1[arr_1_Size]{ -3, 12, 9, 1, 1,  -10, 14, 0, 13, -9, -6, 12, 13, -10, 7, 20, 9, 16, -6, 9 }; // НЕ РАБОТАЕТ В ТАКОЙ ПОЗИЦИИ
 
 	for (int i = 0; i < arr_1_Size; i++) // заполняем 1 массив и выводим
 	{
-		arr_1[i] = rand() % (max - min + 1) + min;
+		//arr_1[i] = rand() % (max - min + 1) + min;
 		cout << arr_1[i] << ' ';
 	}
 	cout << endl;
@@ -37,7 +37,7 @@ int main()
 			amount_of_numbers++;
 			continue;
 		}
-		else
+		else //if (arr_1[i] != 0)
 		{
 			if (amount_of_numbers > max_amount_of_numbers)
 			{
